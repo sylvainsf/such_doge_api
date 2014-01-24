@@ -16,7 +16,7 @@ module SuchDogeApi
   end
 
   def self.get_payment_address(payment_address_label)
-    endpoint = "new_address&address_label=#{payment_address_label}"
+    endpoint = "get_new_address&address_label=#{payment_address_label}"
     self.api_call(endpoint)
   end
 
@@ -26,12 +26,12 @@ module SuchDogeApi
   end
 
   def self.get_address_received(address_label)
-    endpoint = "get_my_addresses&address_label=#{address_label}"
+    endpoint = "get_address_received&address_label=#{address_label}"
     self.api_call(endpoint)
   end
 
   def self.get_address_by_label(address_label)
-    endpoint = "get_my_addresses&address_label=#{address_label}"
+    endpoint = "get_address_by_label&address_label=#{address_label}"
     self.api_call(endpoint)
   end
 
